@@ -38,35 +38,31 @@ export default function Contact() {
                         marginHeight={0}
                         marginWidth={0}
                         style={{ filter: "opacity(0.7)" }}
-                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=elgin%20il+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
-
-
+                        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=farmersbranch%20texas&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+                        aria-label="Google Maps showing location in Elgin, IL"
                     />
                     <div className="bg-gray-900 relative flex flex-wrap py-6 rounded shadow-md">
-                        <div className="lg:w-1/2 px-6">
+                        <address className="lg:w-1/2 px-6">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 Current Location
                             </h2>
                             <p className="mt-1">
-
-                                Elgin, Il, 60120
+                                Farmers Branch, TX, 75234
                             </p>
-                        </div>
+                        </address>
                         <div className="lg:w-1/2 px-6 mt-4 lg:mt-0">
                             <h2 className="title-font font-semibold text-white tracking-widest text-xs">
                                 Get In Touch:
                             </h2>
                             <h5 className="text-indigo-400 leading-relaxed">
                                 Please Contact me by Email!
-
                             </h5>
-
                         </div>
                     </div>
                 </div>
                 <form
                     ref={form}
-                    id="contact"
+                    id="contact-form"
                     name="contact"
                     onSubmit={handleSubmit}
                     className="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
@@ -98,7 +94,7 @@ export default function Contact() {
                             value={email}
                             type="email"
                             id="email"
-                            name="for_name"
+                            name="user_email"
                             className="w-full bg-gray-800 rounded border border-gray-700 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
                             onChange={(e) => setEmail(e.target.value)}
                         />
@@ -117,7 +113,7 @@ export default function Contact() {
                             onChange={(e) => setMessage(e.target.value)}
                         />
                     </div>
-
+    
                     <button
                         type="submit"
                         className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
