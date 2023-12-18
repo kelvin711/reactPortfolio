@@ -9,7 +9,7 @@ export const projects = [
         description:
             "Fullstack MERN application utilizing authentication, also leveraging Redux for state management.",
         image: goalSiteImage,
-        link: "https://goalappkelvin.herokuapp.com/register",
+        link: "https://goals-frontend-y32p.onrender.com",
         source: "https://github.com/kelvin711/Goals"
 
     },
@@ -19,21 +19,10 @@ export const projects = [
         description:
             "React app that makes a call to https://api.publicapis.org/ to deliver content. Styling is done with TailwindCSS.",
         image: listAPIImage,
-        link: "https://api-list-kelvin.herokuapp.com/",
+        link: "https://api-list-5ime.onrender.com",
         source: "https://github.com/kelvin711/api-list"
 
-    },
-    {
-        title: "Pokemon Finder",
-        subtitle: "Pokemon finder application calling on the pokemon AP",
-        description:
-            "React app that makes a call to the pokemon API https://pokeapi.co/ to deliver content. Redux is used for state management. There is pagination and chartJS was used for a better user experience.",
-        image: findThatPokemonImage,
-        link: "https://find-that-pokemon.netlify.app/",
-        source: "https://github.com/kelvin711/pokemon_app"
-
-    },
-
+    }
 ];
 
 export const skills = [
